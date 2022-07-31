@@ -1,0 +1,5 @@
+@font-face {
+    font-family: SpaceMono-Regular;
+    src: local('SpaceMono-Regular'),
+          url('./assets/fonts/SpaceMono-Regular.ttf') format('ttf')
+  }
