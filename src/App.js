@@ -1,19 +1,23 @@
 import logo from './logo.svg';
+
 import './App.css';
+import MenuBar from './components/MenuBar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>WardWare</p>
-          <p>Great things, Coming Soon.</p>
-        <div>
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
+    <div>
+      <MenuBar />
+      <div className="App">
+        
+        <p style={{padding: 10}}>Great things, Coming Soon.</p>
+        <img src={require("./loading.png")} className="App-logo" alt="logo" />
+        <a href='https://reactjs.org' className="reactnotice">
+          <p style={{padding: 15, fontSize: 20}}>
             Made with React
           </p>
-        </div> 
-      </header>
+          <img  src={logo} style={{height: "10vmin", padding: 10}} alt="" />
+        </a>
+      </div>
     </div>
   );
 }
