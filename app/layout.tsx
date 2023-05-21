@@ -6,22 +6,18 @@ import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
 	title: {
-		default: "chronark.com",
-		template: "%s | chronark.com",
+		default: "Wardware",
+		template: "%s | Wardware",
 	},
-	description: "Software engineer at upstash.com and founder of planetfall.io",
+	description: "Software engineer, ICL Graduate and Founder of Wardware Ltd",
 	openGraph: {
-		title: "chronark.com",
+		title: "Wardware",
 		description:
-			"Software engineer at upstash.com and founder of planetfall.io",
-		url: "https://chronark.com",
-		siteName: "chronark.com",
+			"Software engineer, ICL Graduate and Founder of Wardware Ltd",
+		url: "https://www.wardware.co.uk",
+		siteName: "wardware.co.uk",
 		images: [
-			{
-				url: "https://chronark.com/og.png",
-				width: 1920,
-				height: 1080,
-			},
+		
 		],
 		locale: "en-US",
 		type: "website",
@@ -38,7 +34,7 @@ export const metadata: Metadata = {
 		},
 	},
 	twitter: {
-		title: "Chronark",
+		title: "ryanward02",
 		card: "summary_large_image",
 	},
 	icons: {

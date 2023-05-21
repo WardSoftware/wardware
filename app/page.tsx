@@ -7,6 +7,10 @@ const navigation = [
 	{ name: "Contact", href: "/contact" },
 ];
 
+const styles = {
+	project: "text-sm text-zinc-500"
+}
+
 export default function Home() {
 	return (
 		<div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black">
@@ -16,7 +20,7 @@ export default function Home() {
 						href="/RyanCV.pdf"
 						target="_blank"
 						rel="noopener noreferrer"
-						className="text-sm duration-500 text-zinc-500 hover:text-zinc-300"
+						className="text-m b-black rounded-xl duration-500 text-zinc-500 hover:text-zinc-300"
 					>
 						CV
 					</a>
@@ -24,7 +28,7 @@ export default function Home() {
 						<Link
 							key={item.href}
 							href={item.href}
-							className="text-sm duration-500 text-zinc-500 hover:text-zinc-300"
+							className="text-m b-black rounded-xl duration-500 text-zinc-500 hover:text-zinc-300"
 						>
 							{item.name}
 						</Link>
@@ -43,8 +47,24 @@ export default function Home() {
 			<div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
 			<div className="my-16 text-center animate-fade-in">
 				<h2 className="text-sm text-zinc-500 ">
-					Hi, my name is Ryan, I'm a recent Imperial College London Graduate, focusing on developing new and innovative software solutions for everyday problems.
+					Hi, my name is Ryan, I'm (almost) an Imperial College London Graduate. Currently, I'm focusing on developing optimisations to Microsoft's Verona Runtime.
 				</h2>
+			</div>
+			<div className="animate-fade-in">
+				<h1 className="text-l text-zinc-100">Projects:</h1>
+				<ul>
+					<p className={styles.project}>Optimising Behavioural Oriented Concurrency for Parallelism (Final Year Project)</p>
+					<p className={styles.project}>Developed various machine learning models, both classification and regression, using supervised learning</p>
+					<p className={styles.project}>Created a CNN Segmentation mapper to detect abnormalities in brain scans</p>
+					
+					<p className={styles.project}>WasteSaver: A mobile app to stop food waste and plan meals</p>
+					<p className={styles.project}>Sudoku: an ad free sudoku app with over 9m puzzles</p>
+					<p className={styles.project}>PintOS: Developing Schedulers, User App Execution and Virtual Memory into a barebones OS</p>
+					<p className={styles.project}>WACC Compiler: Using Scala to implement a compiler for the ICL Wacc Programming language</p>
+					<p className={styles.project}>This website!</p>
+					<div className="h-4" />
+					<p className={styles.project}>Get in touch for more information, I have completed plenty of other projects!</p>
+				</ul>
 			</div>
 		</div>
 	);
