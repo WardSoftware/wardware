@@ -24,6 +24,14 @@ export default function Home() {
 					>
 						CV
 					</a>
+					<a download
+						href="/report.pdf"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="text-m b-black rounded-xl duration-500 text-zinc-500 hover:text-zinc-300"
+					>
+						Report
+					</a>
 					{navigation.map((item) => (
 						<Link
 							key={item.href}
@@ -47,13 +55,13 @@ export default function Home() {
 			<div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
 			<div className="my-16 text-center animate-fade-in">
 				<h2 className="text-sm text-zinc-500 ">
-					Hi, my name is Ryan, I'm (almost) an Imperial College London Graduate. Currently, I'm focusing on developing optimisations to Microsoft's Verona Runtime.
+					Hi, my name is Ryan, I'm an Imperial College London Graduate. I am currently looking for a new position, with my most recent project focused on optimising Microsoft's Verona for Parallelism.
 				</h2>
 			</div>
 			<div className="animate-fade-in">
 				<h1 className="text-l text-zinc-100">Projects:</h1>
 				<ul>
-					<p className={styles.project}>Optimising Behavioural Oriented Concurrency for Parallelism (Final Year Project)</p>
+					<p className={styles.project}>Optimising Behavioural Oriented Concurrency for Parallelism (Final Year Project - See The link above)</p>
 					<p className={styles.project}>Developed various machine learning models, both classification and regression, using supervised learning</p>
 					<p className={styles.project}>Created a CNN Segmentation mapper to detect abnormalities in brain scans</p>
 					
