@@ -1,0 +1,23 @@
+.headerButton {
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    transition: 500ms ease;
+    border-radius: 5px;
+    color: white;
+}
+
+.headerButtonDisabled {
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    transition: 500ms ease;
+    border-radius: 5px;
+    color: white;
+}
+
+.headerButton:hover {
+    background-color: #fff;
+    border: 0px solid white;
+    color: black;
+}
